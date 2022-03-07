@@ -13,19 +13,18 @@ public class GameManager : MonoBehaviour
 
     public bool isGameOver;
     public List<Vector3> targetPosition;
-    private float spawnRate = 1f;
+    public float spawnRate = 1f;
     private Vector3 randomPos;
 
     public TextMeshProUGUI scoreText;
     public int score = 0;
     public GameObject gameOverPanel;
+    public GameObject gameMenuPanel;
 
     void Start()
     {
         scoreText.text = $"Score: {score}";
-        gameOverPanel.SetActive(false);
-        StartCoroutine(SpawnRandomTarget());
-        Time.timeScale = 1f;
+        gameMenuPanel.SetActive(true);
     }
 
     private Vector3 RandomSpawnPos()
@@ -72,5 +71,20 @@ public class GameManager : MonoBehaviour
     public void restartGame()
     {
         SceneManager.LoadScene(0);
+    }
+
+    public void StartGame(int difficulty)
+    {
+        gameMenuPanel.SetActive(false);
+
+        isGameOver = false;
+        gameOverPanel.SetActive(false);
+
+        score = 0;
+        UpdateScore(0);
+
+        spawnRate = 2f;
+        spawnRate /= difficulty;
+        StartCoroutine(SpawnRandomTarget());
     }
 }

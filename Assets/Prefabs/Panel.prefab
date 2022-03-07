@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2007331450088272735}
   - component: {fileID: 2007331450088272732}
   - component: {fileID: 2007331450088272733}
+  - component: {fileID: 3006331288682556129}
   m_Layer: 5
   m_Name: HARD
   m_TagString: Untagged
@@ -121,6 +122,19 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &3006331288682556129
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2007331450088272707}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35ebf08e47db42c4b9d26de87758bf72, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  difficulty: 3
 --- !u!1 &2007331450152466239
 GameObject:
   m_ObjectHideFlags: 0
@@ -537,6 +551,7 @@ GameObject:
   - component: {fileID: 2007331450378216308}
   - component: {fileID: 2007331450378216309}
   - component: {fileID: 2007331450378216314}
+  - component: {fileID: 4836023035077224241}
   m_Layer: 5
   m_Name: EASY
   m_TagString: Untagged
@@ -646,6 +661,19 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &4836023035077224241
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2007331450378216312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35ebf08e47db42c4b9d26de87758bf72, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  difficulty: 1
 --- !u!1 &2007331451278449518
 GameObject:
   m_ObjectHideFlags: 0
@@ -658,6 +686,7 @@ GameObject:
   - component: {fileID: 2007331451278449514}
   - component: {fileID: 2007331451278449515}
   - component: {fileID: 2007331451278449512}
+  - component: {fileID: 3118132585910384396}
   m_Layer: 5
   m_Name: MEDIUM
   m_TagString: Untagged
@@ -767,6 +796,19 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &3118132585910384396
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2007331451278449518}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35ebf08e47db42c4b9d26de87758bf72, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  difficulty: 2
 --- !u!1 &2007331451701838617
 GameObject:
   m_ObjectHideFlags: 0

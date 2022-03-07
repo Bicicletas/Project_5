@@ -14,6 +14,7 @@ public class Target : MonoBehaviour
     {
         Destroy(gameObject, lifeTime);
         gameManager = FindObjectOfType<GameManager>();
+        lifeTime = gameManager.spawnRate;
     }
 
     void Update()
